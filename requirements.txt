@@ -7,3 +7,4 @@ google.generativeai
 pytube
 youtube-transcript-api
 fastapi[standard]
+httpx
