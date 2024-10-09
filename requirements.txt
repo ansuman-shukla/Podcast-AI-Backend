@@ -1,0 +1,8 @@
+pinecone
+langchain_community
+pinecone_text
+langchain_openai
+langchain
+google.generativeai
+pytube
+youtube-transcript-api
