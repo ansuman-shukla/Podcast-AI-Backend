@@ -1,10 +1,9 @@
 from typing import Union
-
+import os
 from fastapi import FastAPI
 from services.querry import query
 from services.embedder import embedder
 app = FastAPI()
-
 
 @app.get("/")
 def read_root():
@@ -21,5 +20,5 @@ def postLink(youtubeLink: str):
     return {"status": "success"}
     
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))  # Default to 10000 if not set
+    port = int( 10000)  # Default to 10000 if not set
     uvicorn.run(app, host="0.0.0.0", port=port)
