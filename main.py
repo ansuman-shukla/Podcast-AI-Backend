@@ -20,5 +20,5 @@ def postLink(youtubeLink: str):
     return {"status": "success"}
     
 if __name__ == "__main__":
-    port = int( 10000)  # Default to 10000 if not set
+    port = int(os.environ.get("PORT", 10000))  # Fetch the port from environment variables
     uvicorn.run(app, host="0.0.0.0", port=port)
