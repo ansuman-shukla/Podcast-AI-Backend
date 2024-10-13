@@ -3,6 +3,7 @@ from langchain_community.retrievers import PineconeHybridSearchRetriever
 from pinecone_text.sparse import BM25Encoder
 import os
 import nltk
+nltk.download('punkt_tab')
 import dotenv
 from pinecone import Pinecone,ServerlessSpec
 from langchain_openai import OpenAIEmbeddings

@@ -1,10 +1,9 @@
 from typing import Union
-
+import os
 from fastapi import FastAPI
 from services.querry import query
 from services.embedder import embedder
 app = FastAPI()
-
 
 @app.get("/")
 def read_root():
@@ -19,8 +18,8 @@ async def read_item(userQuery: str):
 def postLink(youtubeLink: str):
     embedder(youtubeLink)
     return {"status": "success"}
-
+    
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
     
