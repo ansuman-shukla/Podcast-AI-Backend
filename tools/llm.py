@@ -19,7 +19,7 @@ generation_config = {
 
 def final_response(response):
     model = genai.GenerativeModel(
-    model_name="gemini-1.5-flash-8b",
+    model_name="gemini-1.5-flash-002",
     generation_config=generation_config,
       safety_settings={
           HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
@@ -32,6 +32,6 @@ def final_response(response):
         ]
     )
 
-    response = chat_session.send_message(f"{response}  use every bit of given resource to come up with a information dense  output also don't missout any important point,OVERSHARING is OK")
+    response = chat_session.send_message(f"{response}  use every bit of given resource to come up with a information dense  output also don't missout any important point,OVERSHARING is OK.Respond in MARKDOWN format")
     return response.text
     # print(response.text)

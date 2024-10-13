@@ -6,3 +6,5 @@ langchain
 google.generativeai
 pytube
 youtube-transcript-api
+fastapi[all]
+streamlit
