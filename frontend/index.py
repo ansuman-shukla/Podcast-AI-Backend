@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Page configuration
-st.set_page_config(page_title="AI Assistant", page_icon="🤖", layout="wide")
+st.set_page_config(page_title="Podcast AI", page_icon="🤖", layout="wide")
 
 # Custom CSS
 st.markdown("""
@@ -134,7 +134,7 @@ def post_page():
 
 # Main App
 def main():
-    st.markdown("<h1 class='main-title'>AI Assistant</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='main-title'>Podacst AI🎧</h1>", unsafe_allow_html=True)
     
     col1, col2 = st.columns([2,1])
     with col1:

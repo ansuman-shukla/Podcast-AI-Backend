@@ -9,3 +9,4 @@ youtube-transcript-api
 fastapi[all]
 streamlit
 httpx
+streamlit_lottie
