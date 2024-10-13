@@ -53,8 +53,9 @@ st.markdown("""
     }
     
     .stTextInput>div>div>input, .stTextArea>div>div>textarea {
-        background-color: #F5F5F5;
-        border: 1px solid #E0E0E0;
+        background-color: #D3D3D3;  /* Light grey background */
+        color: #333;  /* Dark text color for contrast */
+        border: 1px solid #A9A9A9;  /* Darker border for definition */
         border-radius: 5px;
         padding: 0.5rem;
         font-size: 1.1rem;
