@@ -17,9 +17,9 @@ def query(user_query):
     Answer the question based on the above context: {user_query}
     """
     
-    for result in results:
-        print(result)
-        print()
+    # for result in results:
+    #     print(result)
+    #     print()
 
     return final_response(PROMPT_TEMPLATE)
 

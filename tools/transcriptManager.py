@@ -22,6 +22,16 @@ def load_documents(link):
         return []  # Return an empty list if there's an error
 
 def split_documents(documents: list[Document]):
+    """
+    Split a list of documents into chunks of 1200 characters each.
+
+    Args:
+        documents (list[Document]): List of documents to split.
+
+    Returns:
+        list[Document]: List of split documents.
+    """
+
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=1200,
         chunk_overlap=80,
